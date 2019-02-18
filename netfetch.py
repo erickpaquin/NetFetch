@@ -1,4 +1,4 @@
-############################################################
+########################################################################
 # netfetch.py
 # 
 # This program goes out via ssh or telnet and fetches config
@@ -10,5 +10,10 @@
 # Version 1.0 (February 17 2019)                                    
 # 
 ############################################################
+import argparse  # module to parse command-line arguments to the program.
 
+
+# Setup the program arguments
+argparser = argparse.ArgumentParser()
+argparser.parse_args()
 
