@@ -1,0 +1,3 @@
+ip,username,password,protocol,port,command-file
+192.168.122.5,erickp,1111,ssh,,cisco-commands.txt
+192.168.122.6,erickp,1111,ssh,,cisco-commands.txt
