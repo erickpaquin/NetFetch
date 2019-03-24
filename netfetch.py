@@ -12,11 +12,8 @@
 #
 ############################################################
 
-#import fileinput
 import sys
 import csv
-import re
-import telnetlib
 from netmiko import Netmiko
 
 # Verify that the hostfile has been passed to the program, if not exit.
