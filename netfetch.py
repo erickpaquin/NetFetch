@@ -31,10 +31,12 @@ else:
                 row[0],
                 username=row[1],
                 password=row[2],
-                device_type=row[3],
-                port=row[4],
+                secret=row[3],
+                device_type=row[4],
+                port=row[5],
             )
-            with open(row[5], 'r') as commands:
+            net_connect.enable()
+            with open(row[6], 'r') as commands:
                 for line in commands:
                     line = line.rstrip('\r\n')
                     output = net_connect.send_command(line)
@@ -42,7 +44,7 @@ else:
                     writefile = open(filename, 'w')
                     writefile.write(output)
                     writefile.close()
-            net_connect.disconnect()
+            #net_connect.disconnect()
             device_read += 1
             print(device_read, "devices done...")
     print("Process complete.", device_read, "devices read.")
