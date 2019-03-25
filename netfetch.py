@@ -12,6 +12,7 @@
 #
 ############################################################
 
+from datetime import datetime
 import sys
 import csv
 from netmiko import Netmiko
@@ -22,6 +23,7 @@ if len(sys.argv) < 2:
 
 # If hostfile has been passed, create a csvreader and start reading lines.
 else:
+    start_time = datetime.now()
     with open(sys.argv[1]) as csvfile:
         device_read = 0
         hostfile = csv.reader(csvfile)
@@ -47,4 +49,4 @@ else:
             #net_connect.disconnect()
             device_read += 1
             print(device_read, "devices done...")
-    print("Process complete.", device_read, "devices read.")
+    print("Process complete.", device_read, "devices read in", str(datetime.now() - start_time), "seconds")
