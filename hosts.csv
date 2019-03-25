@@ -1,3 +1,4 @@
 ip,username,password,secret,device-type,port,command-file
 192.168.122.5,erickp,1111,1111,cisco_ios,22,cisco-commands.txt
 192.168.122.6,erickp,1111,1111,cisco_ios_telnet,23,cisco-commands.txt
+192.168.122.7,erickp,1111,1111,cisco_ios,22,cisco-commands.txt
