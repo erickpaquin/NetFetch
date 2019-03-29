@@ -1,3 +1,2 @@
-show run
 show version
 show ip int br

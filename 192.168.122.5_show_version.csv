@@ -1,0 +1,2 @@
+serial,mac,config_register,running_image,version,uptime,hostname,reload_reason,hardware,rommon
+['94Y1SZIWP0K'],[],0x0,/vios_l2-adventerprisek9-m,,"2 hours, 56 minutes",SW1,Unknown reason,[],Bootstrap
